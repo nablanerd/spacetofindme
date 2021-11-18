@@ -13,7 +13,7 @@ const createSceneFPS = function(engine, canvas) {
             scene.collisionsEnabled = true;
             scene.enablePhysics(gravityVector, physicsPlugin);
 
-            scene.debugLayer.show({embedMode:true});
+            //scene.debugLayer.show({embedMode:true});
 
 
             return scene
@@ -151,6 +151,6 @@ const createSceneFPS = function(engine, canvas) {
       lights()
 
       minimap(scene)
-        
+              
         return scene;
     };

@@ -17,7 +17,9 @@ class Game {
      * @return {BABYLON.Engine} The engine
      */
     createDefaultEngine () { 
-        return new BABYLON.Engine(this.canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); 
+        const engine = new BABYLON.Engine(this.canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); 
+
+        return engine
 
     }
 
@@ -35,7 +37,9 @@ class Game {
    async init(){
 
     window.engine = await this.asyncEngineCreation();
-   
+
+
+
     if (!engine) throw 'engine should not be null.';
    
     if(this.createScene !== null) window.scene = this.createScene(engine, this.canvas)
@@ -48,6 +52,7 @@ class Game {
 
     async asyncEngineCreation()
     {
+        
         try {
             return this.createDefaultEngine();
             } catch(e) {
