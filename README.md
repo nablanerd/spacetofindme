@@ -1,8 +1,8 @@
-# WILDROME BACK
+# SPACE TO FIND ME
 
 ## Description
 
-Application 3D temps réel artistique.
+Application 3D temps réel artistique sur la mémoire.
 
 ## Stack
 
