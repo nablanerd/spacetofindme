@@ -3,15 +3,13 @@ function generate_borders(scene)
 {
 
     let borderMaterial = new BABYLON.StandardMaterial("groundMaterial", scene);
-    // wallMazeMaterial.diffuseColor = new BABYLON.Color3.White();
  
-    borderMaterial.diffuseTexture = new BABYLON.Texture("images/pexels-la-miko-3616764.jpg", scene);     
+    borderMaterial.diffuseTexture = new BABYLON.Texture("public/images/pexels-la-miko-3616764.jpg", scene);     
     
     let uv = 1
     borderMaterial.diffuseTexture.uScale = uv;
     borderMaterial.diffuseTexture.vScale = uv
 
-/*  */
     const border0 = BABYLON.Mesh.CreateBox("border0", 1, scene);
     border0.scaling = new BABYLON.Vector3(5, 100, 200);
     border0.position.x = -100.0;
@@ -27,7 +25,6 @@ function generate_borders(scene)
     border1.scaling = new BABYLON.Vector3(5, 100, 200);
     border1.position.x = 100.0;
     border1.checkCollisions = true;
-   // border1.isVisible = false;
   
    const border1_Material = new BABYLON.StandardMaterial("border1_Material", scene);
    border1_Material.diffuseColor = new BABYLON.Color3.Red();
@@ -37,7 +34,6 @@ function generate_borders(scene)
     border2.scaling = new BABYLON.Vector3(200, 100, 5);
     border2.position.z = 100.0;
     border2.checkCollisions = true;
-   // border2.isVisible = false;
   
    const border2_Material = new BABYLON.StandardMaterial("border2_Material", scene);
     border2_Material.diffuseColor = new BABYLON.Color3.Green();
@@ -47,7 +43,6 @@ function generate_borders(scene)
     border3.scaling = new BABYLON.Vector3(200, 100, 5);
     border3.position.z = -100.0;
     border3.checkCollisions = true;
-   // border3.isVisible = false;
   
    const border3_Material = new BABYLON.StandardMaterial("border3_Material", scene);
     border3_Material.diffuseColor = new BABYLON.Color3.Purple();

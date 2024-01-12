@@ -1,3 +1,4 @@
+
 class Game {
 
     /**
@@ -17,7 +18,12 @@ class Game {
      * @return {BABYLON.Engine} The engine
      */
     createDefaultEngine () { 
+
+
+
         const engine = new BABYLON.Engine(this.canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); 
+
+        engine.displayLoadingUI();
 
         return engine
 
@@ -38,15 +44,11 @@ class Game {
 
     window.engine = await this.asyncEngineCreation();
 
-
-
     if (!engine) throw 'engine should not be null.';
    
     if(this.createScene !== null) window.scene = this.createScene(engine, this.canvas)
 
     window.scene = createSceneFPS(engine, this.canvas)
-
-   // window.scene = this.createScene(engine, this.canvas)
 
     }
 
@@ -54,6 +56,7 @@ class Game {
     {
         
         try {
+             
             return this.createDefaultEngine();
             } catch(e) {
             console.log("the available createEngine function failed. Creating the default engine instead");
@@ -70,18 +73,26 @@ class Game {
             
             sceneToRender = scene    
             
+            setTimeout(() => {
+                engine.hideLoadingUI();
+            }, 1000);
+
             engine.runRenderLoop(function () {
                 if (sceneToRender && sceneToRender.activeCamera) {
 
                     sceneToRender.render();
+
                 }
             });
+
         });
+
 
         // Resize
         window.addEventListener("resize", function () {
             this.engine.resize();
         });
+
 
     }
 
