@@ -4,8 +4,6 @@
 
     await game.init()
 
-   // game.setCreateSceneCallBack(createSceneFPS)
-
     game.run()
 
 })();

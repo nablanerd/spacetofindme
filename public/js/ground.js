@@ -13,7 +13,7 @@ function createGround(scene)
      let groundMaterial = new BABYLON.StandardMaterial("groundMaterial", scene);
      // wallMazeMaterial.diffuseColor = new BABYLON.Color3.White();
   
-     groundMaterial.diffuseTexture = new BABYLON.Texture("images/Marble014_1K_Color_desaturate.jpg", scene);     
+     groundMaterial.diffuseTexture = new BABYLON.Texture("public/images/Marble014_1K_Color_desaturate.jpg", scene);     
     
      groundMaterial.diffuseColor = new BABYLON.Color3(0.8, 0.8, 0.8);
      groundMaterial.specularColor = new BABYLON.Color3(0.5, 0.5, 0.5);

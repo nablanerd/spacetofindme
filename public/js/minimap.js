@@ -11,10 +11,10 @@ function minimap(scene)
         //These values are required for using an orthographic mode,
         // and represents the coordinates of the square containing all the camera view.
         // this.size is the size of our arena
-        mm.orthoLeft = -500/2;
-        mm.orthoRight = 500/2;
-        mm.orthoTop =  500/2;
-        mm.orthoBottom = -500/2;
+        mm.orthoLeft = 500/2;
+        mm.orthoRight =-500/2;
+        mm.orthoTop =  -500/2;
+        mm.orthoBottom = 500/2;
         mm.rotation.x = Math.PI/2;
         // Viewport definition
         const xstart = 0.8, // 80% from the left
@@ -47,18 +47,6 @@ function minimap(scene)
         scene.activeCameras.push(scene.activeCamera);
         scene.activeCameras.push(mm);
         
-
-        let time = 0
-
-        function updateTime() {
-            time ++;
-            //this.timeGui.innerHTML = String(this.time);
-
-            console.log("time", time);
-        }
-
-        // Lance le timer
-       // setInterval(updateTime.bind(this), 1000);
         
         
     }
