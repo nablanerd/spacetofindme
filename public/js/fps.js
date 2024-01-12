@@ -55,7 +55,7 @@ const createSceneFPS = function (engine, canvas) {
 
     })
 
-    const music = new BABYLON.Sound("Music", "public/audio/at_time_to_find_me_2021_10_18.mp3", scene, null);
+    const music = new BABYLON.Sound("Music", "audio/at_time_to_find_me_2021_10_18.mp3", scene, null);
 
     callBackRegister.push({
         "execute": () => {

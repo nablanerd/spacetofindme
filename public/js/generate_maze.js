@@ -7,12 +7,12 @@ class Maze_Generator {
 
     this.textureRegister = []
 
-    this.textureRegister.push(new BABYLON.Texture("public/images/light/00.jpg", this.scene))
-    this.textureRegister.push(new BABYLON.Texture("public/images/light/01.jpg", this.scene))
-    this.textureRegister.push(new BABYLON.Texture("public/images/light/02.jpg", this.scene))
-    this.textureRegister.push(new BABYLON.Texture("public/images/light/03.jpg", this.scene))
-    this.textureRegister.push(new BABYLON.Texture("public/images/light/04.jpg", this.scene))
-    this.textureRegister.push(new BABYLON.Texture("public/images/light/05.jpg", this.scene))
+    this.textureRegister.push(new BABYLON.Texture("images/light/00.jpg", this.scene))
+    this.textureRegister.push(new BABYLON.Texture("images/light/01.jpg", this.scene))
+    this.textureRegister.push(new BABYLON.Texture("images/light/02.jpg", this.scene))
+    this.textureRegister.push(new BABYLON.Texture("images/light/03.jpg", this.scene))
+    this.textureRegister.push(new BABYLON.Texture("images/light/04.jpg", this.scene))
+    this.textureRegister.push(new BABYLON.Texture("images/light/05.jpg", this.scene))
 
     this.walls = []
 

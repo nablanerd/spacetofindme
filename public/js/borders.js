@@ -4,7 +4,7 @@ function generate_borders(scene)
 
     let borderMaterial = new BABYLON.StandardMaterial("groundMaterial", scene);
  
-    borderMaterial.diffuseTexture = new BABYLON.Texture("public/images/pexels-la-miko-3616764.jpg", scene);     
+    borderMaterial.diffuseTexture = new BABYLON.Texture("images/pexels-la-miko-3616764.jpg", scene);     
     
     let uv = 1
     borderMaterial.diffuseTexture.uScale = uv;

@@ -9,7 +9,7 @@ function createCeiling(scene)
 
      let ceilingMaterial = new BABYLON.StandardMaterial("ceilingMaterial", scene);
   
-     ceilingMaterial.diffuseTexture = new BABYLON.Texture("public/images/PaintedPlaster017_1K-JPG/PaintedPlaster017_1K_Color.jpg", scene);     
+     ceilingMaterial.diffuseTexture = new BABYLON.Texture("images/PaintedPlaster017_1K-JPG/PaintedPlaster017_1K_Color.jpg", scene);     
      
      let uv = 3
      ceilingMaterial.diffuseTexture.uScale = uv;
